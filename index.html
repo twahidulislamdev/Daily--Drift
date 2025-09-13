@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include Tailwind CSS via CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Daily Drift</title>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Daily Drift -->
+    <div class="flex flex-col md:flex-row p-6 min-h-screen" id="container">
+      <!-- Sidebar -->
+      <div
+        class="w-full md:w-64 bg-white shadow-md rounded-md mb-6 md:mb-0 md:mr-6"
+        id="leftbar"
+      >
+        <div class="px-5 py-7 rounded-md bg-black mb-6">
+          <h3 class="text-2xl font-semibold text-center text-white">
+            Daily Drift
+          </h3>
+        </div>
+
+        <!-- Bangladeshi Newspaper Links -->
+        <div class="border border-gray-300 rounded-md mb-6">
+          <h3
+            class="text-xl font-semibold mt-3 text-center pb-2 border-b-2 border-gray-300"
+          >
+            Bangla News
+          </h3>
+          <ul class="p-5 space-y-3 text-center">
+            <li>
+              <a
+                href="https://www.ittefaq.com.bd/"
+                target="iframe1"
+                class="text-blue-600 hover:underline"
+                >The Daily Ittefaq</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.prothomalo.com/"
+                target="iframe1"
+                class="text-blue-600 hover:underline"
+                >Prothom Alo</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.thedailystar.net/"
+                target="iframe1"
+                class="text-blue-600 hover:underline"
+                >The Daily Star</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.jugantor.com/"
+                target="iframe1"
+                class="text-blue-600 hover:underline"
+                >Jugantor</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.samakal.com/"
+                target="iframe1"
+                class="text-blue-600 hover:underline"
+                >Samakal</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- English Newspaper Links -->
+        <div class="border border-gray-300 rounded-md">
+          <h3
+            class="text-xl font-semibold mt-3 text-center pb-2 border-b-2 border-gray-300"
+          >
+            English News
+          </h3>
+          <ul class="p-5 space-y-3 text-center">
+            <li>
+              <a
+                href="https://en.prothomalo.com/"
+                target="iframe2"
+                class="text-blue-600 hover:underline"
+                >Prothom Alo</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.dhakapost.com/"
+                target="iframe2"
+                class="text-blue-600 hover:underline"
+                >Dhaka Post</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Main Section -->
+      <div
+        class="flex-1 flex flex-col md:flex-row gap-6 h-[80vh] md:h-auto"
+        id="main"
+      >
+        <iframe
+          src="https://www.prothomalo.com"
+          frameborder="0"
+          class="flex-1 rounded-md"
+          title="Bangla News - Prothom Alo"
+          name="iframe1"
+        ></iframe>
+        <iframe
+          src="https://www.dhakapost.com/"
+          frameborder="0"
+          class="flex-1 rounded-md"
+          title="English News - Dhaka Post"
+          name="iframe2"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>

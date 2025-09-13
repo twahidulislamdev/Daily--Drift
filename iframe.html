@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include Tailwind CSS via CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Daily Drift</title>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Daily Drift -->
+    <div class="flex flex-col md:flex-row p-6 min-h-screen" id="container">
+      <!-- Sidebar -->
+      <div
+        class="w-full md:w-64 bg-white shadow-md rounded-md mb-6 md:mb-0 md:mr-6"
+        id="leftbar"
+      >
+        <div class="px-5 py-7 rounded-md bg-black mb-6">
+          <h3 class="text-2xl font-semibold text-center text-white">
+            Daily Drift
+          </h3>
+        </div>
+
+        <!-- Media & Maps Links -->
+        <div class="border border-gray-300 rounded-md">
+          <h3
+            class="text-xl font-semibold mt-3 text-center pb-2 border-b-2 border-gray-300"
+          >
+            Media & Maps
+          </h3>
+          <ul class="p-5 space-y-3 text-center">
+            <li>
+              <a
+                href="https://mzamin.com/"
+                target="iframe1"
+                class="text-blue-600 hover:underline"
+                >Manab Zamin</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.prothomalo.com/sports/football/kv5p5nna0u"
+                target="iframe2"
+                class="text-blue-600 hover:underline"
+                >Prothom Alo Sports</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/embed/gVhRtrOw-oM?si=42maK0jJ9ZBYdES7"
+                target="iframe3"
+                class="text-blue-600 hover:underline"
+                >YouTube Video</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7221.965667732043!2d91.88080784252868!3d25.17005747107099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750594bca5be24f%3A0xff59100a1d4b542b!2sBichnakandi%20Tourist%20Spot!5e0!3m2!1sen!2sbd!4v1757490580120!5m2!1sen!2sbd"
+                target="iframe4"
+                class="text-blue-600 hover:underline"
+                >Bichnakandi Map</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Main Section -->
+      <div
+        class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6"
+        id="main"
+      >
+        <iframe
+          src="https://mzamin.com/"
+          frameborder="0"
+          class="w-full h-[400px] rounded-md"
+          title="Manab Zamin News"
+          name="iframe1"
+        ></iframe>
+        <iframe
+          src="https://www.prothomalo.com/sports/football/kv5p5nna0u"
+          frameborder="0"
+          class="w-full h-[400px] rounded-md"
+          title="Prothom Alo Sports"
+          name="iframe2"
+        ></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/gVhRtrOw-oM?si=42maK0jJ9ZBYdES7"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          class="w-full max-w-[560px] h-[315px] rounded-md"
+        ></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7221.965667732043!2d91.88080784252868!3d25.17005747107099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750594bca5be24f%3A0xff59100a1d4b542b!2sBichnakandi%20Tourist%20Spot!5e0!3m2!1sen!2sbd!4v1757490580120!5m2!1sen!2sbd"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="w-full max-w-[600px] h-[450px] rounded-md"
+          title="Bichnakandi Tourist Spot Map"
+          name="iframe4"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
